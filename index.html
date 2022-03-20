@@ -11,6 +11,7 @@
     <title>Portfolio | Gary Williams Jr.</title>
 </head>
 <body>
+    <header>
         <nav>
             <h1>
                 <a href="/"><span class="white-glow">Gary</span>WilliamsJr.</a> 
@@ -22,19 +23,58 @@
                 <li><a href="#resume">Resume</a></li>
             </ul>
         </nav>
+    </header>
         
-        <div class="bg-img"></div>
+    <div class="hero-img"></div>
 
-        <div class="flex-container-1">
-            <div class="item" id="about-me">
-                <h2 class="section-title">About Me</h2>
+        <section id="about-me">
+            <div class="flex-container">
+                <div class="section-title">
+                    <h2>About <br/> Me</h2>
+                </div>
+                <div class="about-container">
+                        <img src="./assets/images/gary-pic.jpeg" />
+                        <p>Welcome to my portfolio. My name is Gary Williams Jr. I'm originally from a small town called Dublin,Ga. I started working for Target right out of college, and I've been with the company for 15 years.
+                        This year I took on the challenge of beginning a Web Developer bootcamp with University of Minnesota.</p>
+                </div>
+                
             </div>
-            <div>
-            <img src="./assets/images/gary-pic.jpeg" class="item" />
-            </div>
-            <div>
-                <p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quos id facilis. Sed iusto velit distinctio, veritatis obcaecati labore officia commodi? Nam rem dicta explicabo molestias non neque reprehenderit quae!</p>
-            </div>
+        </section>
 
+        <section id="work">
+            <div class="flex-container">
+                    <div class="section-title">
+                        <h2>Work</h2>
+                    </div>
+                    <div class="work-container">
+                        <a class="grid-item run-buddy" href="https://undisputed06.github.io/run-buddy/" target="_blank"></a>
+                   
+                   <div class="row-2">
+                        <a class="grid-item horiseon" href="https://undisputed06.github.io/horiseon-challenge-1/" target="_blank"></a>
+                        <a class="grid-item coming-soon" href="#"></a>
+                    </div>
+
+                    <div class="row-3">
+                        <a class="grid-item coming-soon" href="#"></a>
+                        <a class="grid-item coming-soon" href="#"></a>
+                    </div>
+                </div>
+        </section>
+
+        <section id="contact-me">
+            <div class="flex-container">
+                <div class="section-title">
+                    <h2>Contact <br/> Me</h2>
+                </div>
+                    <div class="contact-container">
+                        <ul>
+                            <li><a href="tel:123-456-7890">Phone: 123-456-7890</a></li>
+                            <li><a href="mailto:garywilliamsjr@mail2me.com">Email: Gary.WilliamsJr@mail2me.com</a></li>
+                            <li><a href="https://github.com/Undisputed06" target="_blank">Github</a></li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+        </section>
 </body>
 </html>
