@@ -189,16 +189,29 @@ section {
   width: 50%;
 }
 
+.run-buddy:hover{
+  height: 400px;
+}
+
 .horiseon {
   background-image: url("../images/horiseon.png");
   background-size: cover;
   width: 35%;
 }
 
+.horiseon:hover {
+  width: 60%;
+  overflow:hidden;
+}
+
 .coming-soon {
   background-image: url("../images/coming-soon.jpg");
   background-size: cover;
   width: 65%;
+}
+
+.coming-soon:hover{
+  width: 80%;
 }
 
 /* END WORK GRID STYLING  */
@@ -228,3 +241,139 @@ section {
 }
 
 /* END CONTACT CONTAINER STYLING  */
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  header nav h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  .hero-img{
+    padding: 50px;
+  }
+  
+  .hero-img p {
+    display: flex;
+    flex-direction: space-around;
+    position: relative;
+    width: 75%;
+    left: 100px;
+  }
+
+  .work-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+
+  .section-title {
+    width: 30%;
+    text-align: center;
+  }
+
+  .run-buddy {
+  width: 100%;
+}
+
+.grid-row-2 {
+  width: 100%;
+}
+
+.grid-row-3 {
+  width:100%;
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.contact-container li {
+  padding: 15px;
+}
+
+.contact-container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-container img {
+  width: 275px;
+  height: 325px;
+}
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  nav h1 {
+    font-size: 18px;
+    letter-spacing: 7px;
+  }
+
+  header nav ul li a {
+    font-size: 13px;
+  }
+
+  .hero-img{
+    padding: 25px;
+  }
+
+  .hero-img p {
+    left: 60px;
+    margin-top: 12px;
+    font-size: 20px;
+  }
+
+  .section-title {
+    width: 25%;
+    font-size: 15px;
+    text-align: left;
+  }
+
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
+
+  .contact-container li {
+    padding: 5px;
+  }
+  
+
+.contact-container ul li a {
+  color: white;
+  font-size: 14px;
+}
+  }
+}
