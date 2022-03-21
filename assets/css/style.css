@@ -1,165 +1,118 @@
-*{
-    box-sizing:border-box;
-    padding:0;
-    margin:0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+/* SET VAR COLORS */
 
 :root {
-    --color-primary: rgb(57, 57, 87);
-    --color-white: rgb(226, 226, 226);
-    --pic-highlight: rgb(203, 195, 227);
+  --color-primary: rgb(57, 57, 87);
+  --color-white: rgb(226, 226, 226);
+  --purple-highlight: rgb(203, 195, 227);
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
 header {
   position: sticky;
   top: 0;
 }
+
+/* BEGIN NAV STYLING */
+
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--color-primary);
-    min-height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary);
+  min-height: 7vh;
 }
 
 nav h1 {
-    font-size: 20px;
-    letter-spacing: 5px;
-    padding: 0 100px;
-    text-transform:uppercase;
-
-  }
-  
-nav a {
-    text-decoration: none;
-    color: var(--color-white);
+  font-size: 20px;
+  letter-spacing: 5px;
+  padding: 0 100px;
+  text-transform: uppercase;
 }
 
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    width: 50%;
-  }
-    
+nav a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 50%;
+}
+
 nav ul li a {
-    letter-spacing: 5px;
-    font-weight: lighter;
-    font-size: 16px;
-  }
+  letter-spacing: 5px;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+header nav ul li a:hover {
+  background: var(--color-primary);
+  color: var(--purple-highlight);
+  border-radius: 30px;
+  text-shadow: none;
+}
 
 .white-glow {
-    color: white;
-    font-weight: bold;
+  color: white;
+  font-weight: bold;
 }
 
-.hero-img {
-    position: relative;
-    padding: 150px;
-    background-image: url('../images/nordwood-themes-R53t-Tg6J4c-unsplash.jpg'); 
-  }
+.white-glow:hover {
+  background: var(--color-primary);
+  color: var(--purple-highlight);
+  border-radius: 30px;
+  text-shadow: none;
+}
 
+/* END NAV STYLING */
+
+/* BEGIN HERO IMAGE AND TEXT STYLING */
+
+.hero-img {
+  position: relative;
+  padding: 150px;
+  background-image: url("../images/nordwood-themes-R53t-Tg6J4c-unsplash.jpg");
+}
+
+.hero-img p {
+  position: absolute;
+  font-style: italic;
+  font-size: 30px;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: 5px solid var(--purple-highlight);
+  bottom: 10px;
+  right: 30px;
+  width: 35%;
+}
+
+/* END HERO IMAGE AND TEXT STYLING */
 section {
   padding: 8px;
 }
 
-  
+/* STYLE FLEX CONTAINER */
+
 .flex-container {
-    display:flex;
-    justify-content: space-between;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-}
-
-  .section-title {
-    font-size: 25px;
-    text-align: right;
-    color: var(--color-white);
-    border-right: 8px solid grey;
-    width: 300px;
-    padding-right: 8px;
-  }
-
-  .section-content{
-    display:flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    text-align: right;
-  }
-
-.work-container {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  width:70%;
-  
-}
-
-.row-2 {
-  display: flex;
-  justify-content: center;
-  height: 300px;
-  width: 50%;
-}
-
-.row-3 {
-  display:flex;
-  justify-content: center;
-  height: 300px;
-  width: 50%;
-}
-
-
-.contact-container {
-  display: flex;
-  width: 80%;
-  height: 300px;
-}
-
-.about-container {
   display: flex;
   justify-content: space-between;
-  width: 80%;
-}
-
-.grid-item {
-  display:flex;
-  text-align: center;
-  border: 1px solid var(--pic-highlight);
-  opacity: 1;
-}
-
-.grid-item:hover {
-  opacity: .5;
-}
-
-.run-buddy {
-    display:flex;
-    flex-wrap: wrap;
-    background-image: url('../images/run-buddy\ image.jpeg');
-    background-size: cover;
-    height: 300px;
-    width: 50%;
-}
-
-.horiseon {
-  background-image: url('../images/horiseon.png');
-  background-size: cover;
-  width:50%;
-}
-
-.coming-soon {
-  background-image: url('../images/coming-soon.jpg');
-  background-size:cover;
-  width: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .flex-container img {
-    width: 300px;
-    height:300px;    
+  width: 300px;
+  height: 300px;
 }
 
 .flex-container p {
@@ -167,13 +120,105 @@ section {
   line-height: 1.5;
 }
 
-.contact-container ul li a{
+.section-title {
+  font-size: 25px;
+  text-align: right;
+  color: var(--color-white);
+  border-right: 8px solid grey;
+  width: 300px;
+  padding-right: 8px;
+}
+
+.section-content {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: right;
+}
+
+/* END FLEX CONTAINER STYLING */
+
+
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+/* BEGIN WORK CONTAINER AND GRID STYLING  */
+
+.work-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+
+.grid-row-2 {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 50%;
+}
+
+.grid-row-3 {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 50%;
+}
+
+.grid-item {
+  display: flex;
+  text-align: center;
+  border: 1px solid var(--purple-highlight);
+  opacity: 1;
+}
+
+.grid-item:hover {
+  opacity: 0.5;
+}
+
+.run-buddy {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("../images/run-buddy\ image.jpeg");
+  background-size: cover;
+  height: 300px;
+  width: 50%;
+}
+
+.horiseon {
+  background-image: url("../images/horiseon.png");
+  background-size: cover;
+  width: 35%;
+}
+
+.coming-soon {
+  background-image: url("../images/coming-soon.jpg");
+  background-size: cover;
+  width: 65%;
+}
+
+/* END WORK GRID STYLING  */
+
+/* BEGIN CONTACT CONTAINER STYLING  */
+
+.contact-container {
+  display: flex;
+  justify-content: flex-start;
+  height: 200px;
+  width: 70%;
+}
+
+.contact-container ul li a {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .contact-container ul {
-  display:flex;
+  display: flex;
   color: white;
   list-style: none;
 }
@@ -181,3 +226,5 @@ section {
 .contact-container li {
   padding: 30px;
 }
+
+/* END CONTACT CONTAINER STYLING  */
