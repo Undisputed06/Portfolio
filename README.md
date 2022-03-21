@@ -19,8 +19,8 @@ I created a portfolio to showcase the projects I've worked on during web develop
 
 ## Link
 
-URL of the deployed application: https://undisputed06.github.io/portfolio
+URL of the deployed application: https://undisputed06.github.io/Portfolio/
 ## Screenshot of Home Page
 
-![Screenshot of Portfolio](./assets/images/portfolio.gif)
+![Screenshot of Portfolio](./assets/images/portfolio-1.gif)
 
