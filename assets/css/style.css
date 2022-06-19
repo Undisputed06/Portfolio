@@ -199,6 +199,12 @@ section {
   width: 35%;
 }
 
+.unleashed {
+  background-image: url("../images/Unleashed.png");
+  background-size: cover;
+  width: 70%;
+}
+
 .horiseon:hover {
   width: 60%;
   overflow:hidden;
