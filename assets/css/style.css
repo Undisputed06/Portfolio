@@ -108,6 +108,7 @@ section {
   justify-content: space-between;
   background-color: var(--color-primary);
   color: var(--color-white);
+  width: 100%;
 }
 
 .flex-container img {
@@ -159,14 +160,14 @@ section {
   display: flex;
   justify-content: center;
   height: 300px;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .grid-row-3 {
   display: flex;
   justify-content: center;
   height: 300px;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .grid-item {
@@ -186,7 +187,7 @@ section {
   background-image: url("../images/run-buddy\ image.jpeg");
   background-size: cover;
   height: 300px;
-  width: 50%;
+  width: 100%;
 }
 
 .run-buddy:hover{
@@ -203,6 +204,28 @@ section {
   background-image: url("../images/Unleashed.png");
   background-size: cover;
   width: 70%;
+}
+
+.nba-player {
+  background-image: url("../images/nba_player.png");
+  background-size: cover;
+  width: 35%;
+}
+
+.nba-player:hover {
+  width: 90%;
+  overflow:hidden;
+}
+
+.dei-calendar {
+  background-image: url("../images/dei_calendar.png") ;
+  background-size: cover;
+  width: 70%
+}
+
+.dei-calendar:hover {
+  width: 90%;
+  overflow:hidden;
 }
 
 .horiseon:hover {
